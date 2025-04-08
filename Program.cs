@@ -18,7 +18,7 @@ class Program
             driver.Navigate().GoToUrl(url);
 
             // Wait for page to load dynamically
-            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(2));
 
             // Find and fill First Name field
             IWebElement firstName = FindElementRobustly(driver, wait, By.Id("Fname"), By.XPath("//input[@placeholder='Name']"));
